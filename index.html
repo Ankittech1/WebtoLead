@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web To Lead form</title>
+    <script src="script.js">
+        
+    </script>
+    <link rel="stylesheet" type="text/css" href="cssfile.css" />
+  </head>
+  <body>
+    
+
+    <h3 class="heading">Web To Lead Creation</h3>
+    
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5i00000DyX50" method="POST" onsubmit="callHandler(event)">
+        
+        <input type=hidden name="oid" value="00D5i00000DyX50">
+        <input type=hidden name="retURL" value="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit">
+        <input type=hidden name="Lead_Date__c" class="leaddateout"> 
+        
+       
+        
+        <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        
+        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label for="Date">Lead Date</label><input type="date"  class="leaddatein"/><br>
+           
+        <input type="submit" name="submit" class="submit">
+        
+        </form>
+        
+  </body>
+</input>
