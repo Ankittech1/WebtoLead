@@ -1,7 +1,7 @@
 let captchchecked=false;
 function callHandler(event)
 {
-    debugger;
+   // debugger;
     console.log("callHandler Method"); 
     if(captchchecked)
     {
