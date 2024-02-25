@@ -8,9 +8,7 @@
     <script src="script.js">  
     </script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-    </script>
+    
     <link rel="stylesheet" type="text/css" href="cssfile.css" />
   </head>
   <body>
@@ -33,7 +31,7 @@
         <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
         
         <label for="Date">Lead Date</label><input type="date"  class="leaddatein"/><br>
-        <div class="g-recaptcha" data-sitekey="6Lc5M38pAAAAAMfK5p3sUj-Uno9ukiPxY8d2Ejt_"></div><br>
+        <div class="g-recaptcha" date-callback="captchasuccess" data-sitekey="6Lc5M38pAAAAAMfK5p3sUj-Uno9ukiPxY8d2Ejt_"></div><br>
         <input type="submit" name="submit" class="submit">
         
         </form>
